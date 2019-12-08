@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% Approximation tildes, plusses, and minuses...
+\usepackage{textcomp}
+\newcommand{\textapprox}{\raisebox{0.5ex}{\texttildelow}}
+\usepackage{graphicx}
+\newcommand{\plus}{\raisebox{.4\height}{\scalebox{.6}{+}}}
+\newcommand{\minus}{\raisebox{.4\height}{\scalebox{.8}{-}}}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}{\small#2} & #3 \\
+      \textit{\small#4} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Eric Doi} & Email : \href{mailto:eric.kosei.doi@gmail.com}{eric.kosei.doi@gmail.com}\\
+  \href{https://www.linkedin.com/in/ericdoi/}{https://www.linkedin.com/in/ericdoi/} & Mobile : \plus65 8768-5351 / \plus1 (626) 502-7423 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Grab}{ - Southeast Asia's leading ride-hailing/deliveries/payments platform}{Singapore}
+      {Lead Data Scientist}{Aug 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Map search relevance}
+        {Spearheaded the optimization of our map search system in collaboration with engineering, product, and operations teams; set improvement roadmap, established performance metrics, standardized evaluation pipelines, tuned parameters in Elasticsearch and LTR models, and executed analyses and A/B tests.}
+        \resumeItem{Growth-hacking prototypes}
+        {Optimized video content using popularity heuristics for \textapprox{}4x lift in views; built user similarity graph using Locality-Sensitive Hashing for \textapprox{}5x increase in graph edges.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Retention Science}{ - A SaaS startup for intelligent marketing}{Santa Monica, CA}
+      {Data Scientist}{Apr 2015 - May 2018}
+      \resumeItemListStart
+        \resumeItem{Lead scoring}
+          {Overhauled system to score customers' likelihood of purchase; used regularization, feature engineering, probability calibration, and operational logic to improve PR-AUC by 20x and secure client renewal.}
+        \resumeItem{Product recommendations}
+          {Wrote Spark pipelines using clickstream and transaction data to deliver tailored recommendations to 100M{\tiny+} users daily; e.g. used Bloom Filters for 10x speedup of duplicate removal.}
+        \resumeItem{A/B testing service}
+          {Created a Play/Spark service to accelerate testing of ML models in production.}
+        \resumeItem{Subscription churn prediction}
+          {Built a Random Forest classifier in H2O with AUC of 0.8 to aid prevention.}
+        \resumeItem{Interim management}
+          {Led team of 5 for 1y, triaging feature requests and upholding code standards.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Opera Solutions}{ - Enterprise analytics software and consulting firm}{San Diego, CA}
+      {Analytics Manager (2014) / Analytics Lead (2013) / Sr. Analytics Specialist (2011) }{Apr 2011 - Apr 2015}
+      \resumeItemListStart
+      	\resumeItem{Billing optimization}
+      	  {Ran modeling, maintenance, and analysis for a live system (Patent 9,785,983) used by \textapprox{}30 auditors to recover \textapprox{}\$10M/year revenue by recommending missing HCPCS charge codes and quantities.}
+        \resumeItem{Feedback model}
+          {Introduced a second-layer model to learn user feedback and cut false positives by \textapprox{}30\%.}
+        \resumeItem{Model deployment}
+          {Trained, deployed, and evaluated models for 100{\tiny+} hospitals, with mean of \textapprox{}40\% precision.}
+        \resumeItem{Management}
+          {Led Delhi-based analytics team of 6, collaborated with software team, and presented to clients.} 
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Laserfiche}{ - Pioneer in document imaging system software since 1987}{Long Beach, CA}
+      {Software Engineer Intern}{Jun 2010 - Sep 2010}
+      \resumeItemListStart
+        \resumeItem{Mobile document scanner}
+          {Ported an edge detection algorithm (Canny with Hough transform) from desktop to iPhone 3G; used heuristics to maintain speed and accuracy with 94\% less RAM and 80\% less CPU.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of California, San Diego}{}{La Jolla, CA}
+{Master of Science in Computer Science;  GPA: 3.9}{Sep 2009 -- Mar 2011}
+\resumeItemListStart
+\resumeItem{Capstone}{\textit{Low-Rank Decomposition and Logistic Regression Methods for Link Prediction in Terrorist Networks}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Harvey Mudd College}{}{Claremont, CA}
+{Bachelor of Science in Computer Science;  GPA: 3.5, with Distinction}{Aug 2005 -- May 2009}
+\resumeItemListStart
+\resumeItem{Research}{\textit{Grouping Strokes into Shapes in Hand-Drawn Diagrams}, AAAI 2010}
+\resumeItem{Awards}{Harvey S. Mudd Merit Scholar; Harvey Mudd National Merit Scholar}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------OTHER--------------
+\section{Other}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Kaggle}
+      {Top 10\% rank in rental listing classification competition (\href{github.com/ericdoi/kaggle-renthop-2017}{https://github.com/ericdoi/kaggle-renthop-2017}).}
+    \resumeSubItem{Boy Scouts of America}
+      {Eagle Scout and Senior Patrol Leader; led a troop of 40+ in camping, service, and growth.}
+    \resumeSubItem{Interests}
+      {Sustainable energy, Mandarin, cognitive psychology, armchair economics, rock climbing.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeItem{Software}{Languages (Scala, Python, C*, Bash), Tools (git, JIRA)}
+    \resumeItem{Modeling}{Packages (SparkML, scikit-learn, numpy/scipy, R, H2O), Algorithms (Linear/Logistic Regression, Trees, Stacking, PCA, K-Means)}
+    \resumeItem{Data}{ETL (Spark, Airflow, Parquet, Oozie), Analysis (SQL, pandas, Excel, Unix, dplyr)}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
