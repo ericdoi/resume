@@ -17,6 +17,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{xcolor}
 
 % Approximation tildes, plusses, and minuses...
 \usepackage{textcomp}
@@ -91,17 +92,17 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Grab}{ - Southeast Asia's leading ride-hailing/deliveries/payments platform}{Singapore}
-      {Lead Data Scientist}{Aug 2018 - Present}
+      {Grab}{\color{gray}\ - Southeast Asia's leading ride-hailing/deliveries/payments platform}{Singapore}
+      {Lead Data Scientist, Maps}{Aug 2018 - Present}
       \resumeItemListStart
-        \resumeItem{Map search relevance}
-        {Led the optimization of our map search system in collaboration with engineering, product, analytics, and operations teams; established performance metrics, wrote evaluation pipelines, tuned Elasticsearch and ranking models, and conducted analyses and A/B tests to drive +4pp lift in recall@3.}
+        \resumeItem{Search relevance}
+        {Leading a team of 5 senior data scientists to improve retrieval and ranking of search results by collaborating with our engineering, product, analytics, and operations teams; we helped define performance metrics, write evaluation pipelines, tune Elasticsearch queries, train ranking models, and conduct analyses and A/B tests.  Our team helped improve recall@3 by over 5pp.}
         \resumeItem{Growth-hacking}
         {Optimized video content using popularity heuristics for \textapprox{}4x lift in views; prototyped NLP-based interest graph in Neo4j; used Locality-Sensitive Hashing to identify \textapprox{}5x increase in similarity graph edges.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Retention Science}{ - A SaaS startup for intelligent marketing}{Santa Monica, CA}
+      {Retention Science}{\color{gray}\ - A SaaS startup for intelligent marketing}{Santa Monica, CA}
       {Data Scientist}{Apr 2015 - May 2018}
       \resumeItemListStart
         \resumeItem{Lead scoring}
@@ -117,11 +118,11 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Opera Solutions}{ - Enterprise analytics software and consulting firm}{San Diego, CA}
+      {Opera Solutions}{\color{gray}\ - Enterprise analytics software and consulting firm}{San Diego, CA}
       {Analytics Manager (2014) / Analytics Lead (2013) / Sr. Analytics Specialist (2011) }{Apr 2011 - Apr 2015}
       \resumeItemListStart
       	\resumeItem{Healthcare billing optimization}
-      	  {Ran modeling, maintenance, and analysis for a live system (Patent 9,785,983) used by \textapprox{}30 auditors to recover \textapprox{}\$10M/year revenue by recommending missing HCPCS charge codes.}
+      	  {Co-developed and deployed an ML-driven system used by 30 auditors to recover \textapprox{}\$10M/year revenue by recommending missing HCPCS charge codes (US Patent 9,785,983).}
         \resumeItem{Feedback model}
           {Introduced a second-layer model to learn user feedback and cut false positives by \textapprox{}30\%.}
         \resumeItem{Model deployment}
@@ -131,7 +132,7 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Laserfiche}{ - Pioneer in document imaging system software since 1987}{Long Beach, CA}
+      {Laserfiche}{\color{gray}\ - Pioneer in document imaging system software since 1987}{Long Beach, CA}
       {Software Engineer Intern}{Jun 2010 - Sep 2010}
       \resumeItemListStart
         \resumeItem{Mobile document scanner}
@@ -159,24 +160,22 @@
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
+
+%--------SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+\resumeItem{Data}{ETL (Spark, Airflow, Parquet, Oozie), Analysis (SQL, pandas/numpy/scipy, Excel, cut/grep/awk, dplyr)}
+\resumeItem{Modeling}{Packages (SparkML, scikit-learn, H2O), Algorithms (Linear/Logistic Regression, Random Forests, GBDTs, Stacking; Collaborative Filtering; Learning-to-Rank; PCA/SVD, K-Means; Uplift modeling)}
+\resumeItem{Software}{Languages (Python, Scala, C*, Bash, R), Tools (git, JIRA), Infra (AWS, Azure)}
+\resumeSubHeadingListEnd
+
 %-----------OTHER--------------
 \section{Other}
   \resumeSubHeadingListStart
     \resumeSubItem{Kaggle}
       {Top 10\% rank in rental listing classification competition (\href{github.com/ericdoi/kaggle-renthop-2017}{https://github.com/ericdoi/kaggle-renthop-2017}).}
     \resumeSubItem{Eagle Scout}
-      {As Senior Patrol Leader, led a troop of 40\plus~scouts in camping, community service, and growth.}
-    \resumeSubItem{Interests}
-      {Sustainable energy, Mandarin, cognitive psychology, armchair economics, rock climbing.}
-  \resumeSubHeadingListEnd
-
-
-%--------PROGRAMMING SKILLS------------
-\section{Skills}
-  \resumeSubHeadingListStart
-    \resumeItem{Software}{Languages (Scala, Python, C*, Bash), Tools (git, JIRA), Infra (AWS, Azure)}
-    \resumeItem{Modeling}{Packages (SparkML, scikit-learn, numpy/scipy, R, H2O), Algorithms (Linear/Logistic Regression, Trees, Stacking; Collaborative Filtering; Learning-to-Rank; PCA/SVD, K-Means; Uplift modeling)}
-    \resumeItem{Data}{ETL (Spark, Airflow, Parquet, Oozie), Analysis (SQL, pandas, Excel, cut/grep/awk, dplyr)}
+      {As Senior Patrol Leader, led a BSA troop of 40\plus~in camping, community service, and personal growth.}
   \resumeSubHeadingListEnd
 
 
